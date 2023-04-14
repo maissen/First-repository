@@ -1,21 +1,14 @@
 import random
 
-# Get user input
-name = input("What's your name? ")
-gender = input("What's your gender? ")
+# Get user input for name and gender
+name = input("What is your name? ")
+gender = input("What is your gender? ")
 
-# Generate a random number between 1 and 10 for the year of marriage
-year = random.randint(2024, 2040)
+# Generate random partner name, year of marriage, and nationality
+partner_name = random.choice(["John", "Emily", "David", "Sarah", "Michael"])
+year_of_marriage = random.randint(2025, 2045)
+nationality = random.choice(["American", "British", "Canadian", "Australian", "French", "Japanese", "Russian"])
 
-# Generate a list of potential partners based on gender
-if gender.lower() == 'male':
-    partners = ['Emma', 'Olivia', 'Ava', 'Sophia', 'Isabella', 'Mia', 'Charlotte', 'Amelia', 'Harper', 'Evelyn']
-else:
-    partners = ['Liam', 'Noah', 'Oliver', 'Elijah', 'William', 'James', 'Benjamin', 'Lucas', 'Henry', 'Alexander']
-
-# Guess the future partner's name randomly
-partner = random.choice(partners)
-
-# Print the results
-print(f"Hi {name}! I think your future partner's name is {partner} and you'll get married in {year}.")
+# Print prediction
+print("Hi", name + "!", "Based on our calculations, your future partner's name will be", partner_name + ". You will get married in the year", year_of_marriage, "and your partner will be of", nationality, "nationality.")
 
