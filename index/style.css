@@ -9,6 +9,10 @@ body{
     color: #fff;
 }
 
+header{
+    margin-bottom: 30px;
+}
+
 nav{
     background: darkolivegreen;
     padding: 8px;
