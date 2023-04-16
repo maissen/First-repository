@@ -11,6 +11,8 @@ body{
 
 header{
     margin-bottom: 30px;
+    color: orangered;
+    font-size: 1.2 em;
 }
 
 nav{
